@@ -1,18 +1,19 @@
 import React from "react";
-import "./Weather.css";
+import "./Weather.css"
 
 export default function Weather(){
     return (
-
         <div className="Weather">
+            
             <form>
-                <div className="row">
+                <div className="row mt-3">
 
-                    <div className="col-3">
+                    <div className="col-9">
                 <input 
                 type="Search"
-                placeholder="Enter a CITY"
+                placeholder="Enter a City"
                 className="form-control"
+                autoFocus="on"
                 />
                 </div>
 
@@ -20,28 +21,34 @@ export default function Weather(){
                 <input
                 type="Submit"
                 value="search"
-                className="btn btn-primary"
+                className="btn btn-primary w-100"
                 />
                 </div>
 
                 </div>
             </form>
 
+            <div className="col-3">
             <h1>London</h1>
             <ul>
             <li>Wednesday 7:00</li>
             <li>Mostly Cloudy</li>
             </ul>
 
-            <div className="row">
-            <div className="col-6">
+            <div className="clearFix">
                 <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Mostly cloudy"
+    
                 />
-                6°C
 
-                <div className="col-6">
+                
+                <span className="temperature">6</span> 
+                <span className="units">°C|°F</span>
+                </div>
+                </div>
+
+                <div className="col-12">
                     <ul>
                         <li>Precipitation: 15%</li>
                         <li>Humidity: 72%</li>
@@ -49,9 +56,10 @@ export default function Weather(){
                     </ul>
                 </div>
 
-            </div>
+            
             </div>
 
-            </div>
+        
+            
     )
 }
