@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather/>
+      <Weather defaultCity="London"/>
       <footer>
       This project was coded by Abuk Sedonia and it is {""}
       <a href="https://github.com/Abuk974/speed-my-app?" target="blank"> 
