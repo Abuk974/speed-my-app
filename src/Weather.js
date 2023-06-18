@@ -66,7 +66,7 @@ const[city, setCity]=useState(props.defaultCity)
                     </div>
                 </form>
                 <WeatherInfo data={weatherData}/>
-    
+                
                 
                 </div>
     
@@ -75,6 +75,7 @@ const[city, setCity]=useState(props.defaultCity)
         );
     } else{
 
+        search()
     
 
     return"Loading.."
