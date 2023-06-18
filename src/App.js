@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
+      <div className="container">
       <h1>React Weather App</h1>
       
       <footer>
@@ -13,6 +13,7 @@ function App() {
       open-sourced on GitHub
       </a>
       </footer>
+      </div>
     </div>
   );
 }
