@@ -16,7 +16,7 @@ const[city, setCity]=useState(props.defaultCity)
             humidity:response.data.main.humidity,
             date:new Date(response.data.dt * 1000),
             description:response.data.weather[0].description,
-            iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+            iconUrl:` https://openweathermap.org/img/wn/${response.data.weather[0].icon}10d@2x.png`,
             wind:response.data.wind.speed,
             city:response.data.name,
         });
