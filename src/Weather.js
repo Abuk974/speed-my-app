@@ -16,7 +16,7 @@ const[city, setCity]=useState(props.defaultCity)
             humidity:response.data.main.humidity,
             date:new Date(response.data.dt * 1000),
             description:response.data.weather[0].description,
-            icon:response.data.main.icon,
+            icon:response.data.weather[0].icon,
             wind:response.data.wind.speed,
             city:response.data.name,
         });
