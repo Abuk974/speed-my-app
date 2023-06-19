@@ -65,12 +65,8 @@ const[city, setCity]=useState(props.defaultCity)
     
                     </div>
                 </form>
-                <WeatherInfo data={weatherData}/>
-                
-                
+                <WeatherInfo data={weatherData}/> 
                 </div>
-    
-            
                 
         );
     } else{
