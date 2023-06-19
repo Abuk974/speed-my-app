@@ -4,12 +4,12 @@ export default function WeatherTemperature(props){
     const[unit, setUnit]=useState("celisius");
 
     function showFahrenheit(event){
-        event.preventDefault()
-        setUnit("fahrenheit")
+        event.preventDefault();
+        setUnit("fahrenheit");
     }
     function showCelisius(event){
         event.preventDefault();
-        setUnit("celisius")
+        setUnit("celisius");
     }
 
     let fahrenheit=(props.celisius*9)/5+32;
