@@ -3,27 +3,34 @@ import "./WeatherForecast.css";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
 
-export default function WeatherForecast(props) {
+export default function WeatherForecast(props){
  let [loaded, setLoaded] = useState(false)
  let [forecast,setForecast]=useState(null);
   
-    function handleResponse(response) {
+    function handleResponse(response){
       setForecast(response.data.daily);
       setLoaded(true);
     }
   
-    if (loaded.forecast) {
+    if (loaded.forecast){
       return (
         <div className="WeatherForecast">
           <div className="row">
-            <div className="col">
-              <WeatherForecastDay data={forecast.loaded[0]}/>
-            </div>
-          </div>
-        </div>
+          {forecast.map (function (dailyForecast, index){
+            if (index<5){
+                return(
+                    <div className="col" key={index}> 
+                      <WeatherForecastDay data={dailyForecast}/>
+                    </div>
+                )
+            }
+        })}
+        </div>      
+     </div>
       );
-    }
- else {    
+    
+        
+    }else {    
 let apiKey="1d038ee28ef2727a9f0310860ac10ae9";
 let longitude=props.coordinates.lon;
 let latitude=props.coordinates.lat;
