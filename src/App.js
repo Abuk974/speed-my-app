@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <div className="icon">
       <Weather defaultCity="London"/>
       <footer>
       This project was coded by Abuk Sedonia and it is {""}
@@ -14,6 +15,7 @@ function App() {
       open-sourced on GitHub
       </a>
       </footer>
+      </div>
       </div>
     </div>
   );

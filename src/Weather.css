@@ -1,18 +1,20 @@
 .Weather{
 border: 1px solid;
-color:rgb(red, green, blue);
+color:rgb(rgb(248, 246, 246), green, blue);
 display: block;
 padding: 16px;
 margin: 30px auto;
 max-width: 600px;
 border-radius: 4px;
+background-image: url(https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?cs=srgb&dl=pexels-magda-ehlers-2114014.jpg&fm=jpg);
+background-size: cover;
 
 }
 
 .Weather h1{
 display: block;
-color: #353434;
-font-size: 30PX;
+color: #fbf9f9;
+font-size: 35PX;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: 100PX;
 line-height: 29PX;
@@ -22,12 +24,12 @@ margin: 20px;
 .Weather ul{
 margin: 0;
 padding: 0;
-color: #262525;
+color: #fbfafa;
 }
 
 .Weather li{
     list-style: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100px;
     line-height: 19px;
 }
@@ -46,8 +48,8 @@ display: inline-block;
 .Weather .temperature{
     font-weight: bold;
     font-size: 54px;
-    
     font-weight: 400px;
+    color: #fbf9f9;
 }
 
 .Weather .unit{
@@ -57,4 +59,9 @@ position: relative;
 line-height: 1;
 top: -34px;
 margin-left: 5px;
+color: #fbf9f9;
+}
+.Weather .unit a{
+    color: #fbf9f9;
+    
 }
